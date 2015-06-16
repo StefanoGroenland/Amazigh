@@ -30,6 +30,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal2"
                     android:id="@+id/button22"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
                 <Button
@@ -37,6 +38,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal3"
                     android:id="@+id/button21"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#ff4634ff" />
 
                 <Button
@@ -44,6 +46,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal4"
                     android:id="@+id/button122"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
                 <Button
@@ -51,6 +54,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal5"
                     android:id="@+id/button72"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
                 <Button
@@ -58,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal6"
                     android:id="@+id/buttmon2"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#ff4634ff" />
 
                 <Button
@@ -65,6 +70,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal7"
                     android:id="@+id/bumtton2"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
                 <Button
@@ -72,6 +78,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal8"
                     android:id="@+id/butt8on2"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
                 <Button
@@ -86,6 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal10"
                     android:id="@+id/button2"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
                 <Button
@@ -93,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text="verhaal11"
                     android:id="@+id/button3"
+                    android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
         </LinearLayout>
     </ScrollView>
