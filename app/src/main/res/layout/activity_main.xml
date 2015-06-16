@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verhaal 1"
+                    android:id="@+id/button1"
+                    android:onClick="onGetVerhaalClick"
+                    android:background="#ff94ff51" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal2"
+                    android:id="@+id/button22"
+                    android:background="#fffffd33" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal3"
+                    android:id="@+id/button21"
+                    android:background="#ff4634ff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal4"
+                    android:id="@+id/button122"
+                    android:background="#ff94ff51" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal5"
+                    android:id="@+id/button72"
+                    android:background="#fffffd33" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal6"
+                    android:id="@+id/buttmon2"
+                    android:background="#ff4634ff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal7"
+                    android:id="@+id/bumtton2"
+                    android:background="#ff94ff51" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal8"
+                    android:id="@+id/butt8on2"
+                    android:background="#fffffd33" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal9"
+                    android:id="@+id/butto8n2"
+                    android:background="#ff4634ff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal10"
+                    android:id="@+id/button2"
+                    android:background="#ff94ff51" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="verhaal11"
+                    android:id="@+id/button3"
+                    android:background="#fffffd33" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
