@@ -9,7 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private int chosenBtn = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +43,51 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+    public int getButtonChosen(View v){
+        switch (v.getId()) {
+            case R.id.button1:
+                this.chosenBtn = 1;
+                break;
+            case R.id.button2:
+                this.chosenBtn = 2;
+                break;
+            case R.id.button3:
+                this.chosenBtn = 3;
+                break;
+            case R.id.button4:
+                this.chosenBtn = 4;
+                break;
+            case R.id.button5:
+                this.chosenBtn = 5;
+                break;
+            case R.id.button6:
+                this.chosenBtn = 6;
+                break;
+            case R.id.button7:
+                this.chosenBtn = 7;
+                break;
+            case R.id.button8:
+                this.chosenBtn = 8;
+                break;
+            case R.id.button9:
+                this.chosenBtn = 9;
+                break;
+            case R.id.button10:
+                this.chosenBtn = 10;
+                break;
+            case R.id.button11:
+                this.chosenBtn = 11;
+                break;
+        }
+        return this.chosenBtn;
+    }
     public void onGetVerhaalClick(View view) {
-
+        getButtonChosen(view);
         Intent getNameScreenIntent = new Intent(this,
                 VerhaalActivity.class);
-
         final int result = 1;
-
         getNameScreenIntent.putExtra("callingActivity", "MainActivity");
-
+        getNameScreenIntent.putExtra("storyChosen",getButtonChosen(view));
         startActivity(getNameScreenIntent);
 
     }

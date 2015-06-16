@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal2"
-                    android:id="@+id/button22"
+                    android:id="@+id/button2"
                     android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal3"
-                    android:id="@+id/button21"
+                    android:id="@+id/button3"
                     android:onClick="onGetVerhaalClick"
                     android:background="#ff4634ff" />
 
@@ -45,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal4"
-                    android:id="@+id/button122"
+                    android:id="@+id/button4"
                     android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
@@ -53,7 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal5"
-                    android:id="@+id/button72"
+                    android:id="@+id/button5"
                     android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal6"
-                    android:id="@+id/buttmon2"
+                    android:id="@+id/button6"
                     android:onClick="onGetVerhaalClick"
                     android:background="#ff4634ff" />
 
@@ -69,7 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal7"
-                    android:id="@+id/bumtton2"
+                    android:id="@+id/button7"
                     android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
@@ -77,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal8"
-                    android:id="@+id/butt8on2"
+                    android:id="@+id/button8"
                     android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
 
@@ -85,14 +85,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal9"
-                    android:id="@+id/butto8n2"
+                    android:id="@+id/button9"
                     android:background="#ff4634ff" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal10"
-                    android:id="@+id/button2"
+                    android:id="@+id/button10"
                     android:onClick="onGetVerhaalClick"
                     android:background="#ff94ff51" />
 
@@ -100,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="verhaal11"
-                    android:id="@+id/button3"
+                    android:id="@+id/button11"
                     android:onClick="onGetVerhaalClick"
                     android:background="#fffffd33" />
         </LinearLayout>
