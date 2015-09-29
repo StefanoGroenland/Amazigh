@@ -66,18 +66,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button7:
                 this.chosenBtn = 7;
                 break;
-            case R.id.button8:
-                this.chosenBtn = 8;
-                break;
-            case R.id.button9:
-                this.chosenBtn = 9;
-                break;
-            case R.id.button10:
-                this.chosenBtn = 10;
-                break;
-            case R.id.button11:
-                this.chosenBtn = 11;
-                break;
         }
         return this.chosenBtn;
     }
@@ -88,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         final int result = 1;
         getNameScreenIntent.putExtra("callingActivity", "MainActivity");
         getNameScreenIntent.putExtra("storyChosen",getButtonChosen(view));
+        getNameScreenIntent.putExtra("start",false);
+        getNameScreenIntent.putExtra("exists",false);
         startActivity(getNameScreenIntent);
 
     }

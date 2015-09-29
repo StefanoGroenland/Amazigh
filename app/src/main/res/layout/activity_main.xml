@@ -1,21 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:background="#CBA800">
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
 
         <LinearLayout
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:paddingBottom="@dimen/activity_vertical_margin"
+
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:weightSum="1">
 
                 <Button
                     android:layout_width="match_parent"
@@ -23,7 +24,8 @@
                     android:text="Verhaal 1"
                     android:id="@+id/button1"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#ff94ff51" />
+                    android:background="#5A7F2A"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -31,7 +33,8 @@
                     android:text="verhaal2"
                     android:id="@+id/button2"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#fffffd33" />
+                    android:background="#87BF3F"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -39,7 +42,8 @@
                     android:text="verhaal3"
                     android:id="@+id/button3"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#ff4634ff" />
+                    android:background="#5A7F2A"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -47,7 +51,8 @@
                     android:text="verhaal4"
                     android:id="@+id/button4"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#ff94ff51" />
+                    android:background="#87BF3F"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -55,7 +60,8 @@
                     android:text="verhaal5"
                     android:id="@+id/button5"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#fffffd33" />
+                    android:background="#5A7F2A"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -63,7 +69,8 @@
                     android:text="verhaal6"
                     android:id="@+id/button6"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#ff4634ff" />
+                    android:background="#87BF3F"
+                    android:textColor="#fff" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -71,38 +78,10 @@
                     android:text="verhaal7"
                     android:id="@+id/button7"
                     android:onClick="onGetVerhaalClick"
-                    android:background="#ff94ff51" />
+                    android:background="#5A7F2A"
+                    android:textColor="#fff"
+                    android:layout_weight="1.89" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="verhaal8"
-                    android:id="@+id/button8"
-                    android:onClick="onGetVerhaalClick"
-                    android:background="#fffffd33" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="verhaal9"
-                    android:id="@+id/button9"
-                    android:background="#ff4634ff" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="verhaal10"
-                    android:id="@+id/button10"
-                    android:onClick="onGetVerhaalClick"
-                    android:background="#ff94ff51" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="verhaal11"
-                    android:id="@+id/button11"
-                    android:onClick="onGetVerhaalClick"
-                    android:background="#fffffd33" />
         </LinearLayout>
     </ScrollView>
 

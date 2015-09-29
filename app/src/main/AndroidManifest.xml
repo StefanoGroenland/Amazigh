@@ -23,7 +23,14 @@
     </activity>
         <activity
             android:name=".VerhaalActivity"
-            android:label="Verhaal">
+            android:label="Verhaal"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 
