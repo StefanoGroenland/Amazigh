@@ -13,6 +13,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private int chosenBtn = 0;
+    // test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 this.chosenBtn = 6;
                 break;
             case R.id.button7:
+
                 this.chosenBtn = 7;
                 break;
         }
