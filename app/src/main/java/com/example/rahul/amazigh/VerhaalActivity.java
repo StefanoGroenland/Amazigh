@@ -70,7 +70,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 switch (story) {
                     case 1:
                         musicReset();
-
+                        Back.setImageResource(R.drawable.drawer_shadow);
                         image.setImageResource(R.drawable.assin01);
                         System.out.println("Story1 Selected!");
                         mySound = MediaPlayer.create(this, R.raw.massin01);
