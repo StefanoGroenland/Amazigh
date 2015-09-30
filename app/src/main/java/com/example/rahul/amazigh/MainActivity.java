@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 this.chosenBtn = 6;
                 break;
             case R.id.button7:
+
                 this.chosenBtn = 7;
                 break;
         }
