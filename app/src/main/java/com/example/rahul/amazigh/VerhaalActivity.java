@@ -64,7 +64,6 @@ public class VerhaalActivity extends AppCompatActivity {
             Next.setOnClickListener(NextButtonListener);
             Back.setOnClickListener(BackButtonListener);
             System.out.println(musicState());
-
             if( !musicState() ){
                 switch (story) {
                     case 1:
