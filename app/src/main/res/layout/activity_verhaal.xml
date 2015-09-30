@@ -29,7 +29,7 @@
             android:src="@drawable/ic_action_forward"
             android:id="@+id/Next"
             android:layout_gravity="right"
-            android:layout_weight="0.55"/>
+            android:layout_weight="0.50"/>
     </TableRow>
 
 
