@@ -189,6 +189,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 startActivity(storyIntentBack);
             }
             else{
+
                 Intent storyIntentMain = new Intent(this,
                         MainActivity.class);
                 musicReset();
