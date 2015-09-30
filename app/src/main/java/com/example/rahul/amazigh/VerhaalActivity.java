@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -19,8 +20,8 @@ public class VerhaalActivity extends AppCompatActivity {
         static MediaPlayer mySound = null;
 
         int story;
-        Button Next;
-        Button Back;
+        ImageButton Next;
+        ImageButton Back;
         boolean musicState = false;
 
         ImageView image;
@@ -58,8 +59,8 @@ public class VerhaalActivity extends AppCompatActivity {
             //Get the imageView
             image = (ImageView)  findViewById(R.id.imageView);
             //Get the Buttons
-            Next = (Button) findViewById(R.id.Next);
-            Back = (Button) findViewById(R.id.Back);
+            Next = (ImageButton) findViewById(R.id.Next);
+            Back = (ImageButton) findViewById(R.id.Back);
             //Set Onclick listeners
             Next.setOnClickListener(NextButtonListener);
             Back.setOnClickListener(BackButtonListener);
@@ -68,7 +69,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 switch (story) {
                     case 1:
                         musicReset();
-                        this.Back.setText("Menu");
+
                         image.setImageResource(R.drawable.assin01);
                         System.out.println("Story1 Selected!");
                         mySound = MediaPlayer.create(this, R.raw.massin01);
@@ -105,7 +106,7 @@ public class VerhaalActivity extends AppCompatActivity {
                         break;
                     case 7:
                         musicReset();
-                        this.Next.setText("Menu");
+
                         image.setImageResource(R.drawable.assin07);
                         mySound = MediaPlayer.create(this, R.raw.massin07);
                         System.out.println("Story7 Selected!");
@@ -189,7 +190,6 @@ public class VerhaalActivity extends AppCompatActivity {
                 startActivity(storyIntentBack);
             }
             else{
-
                 Intent storyIntentMain = new Intent(this,
                         MainActivity.class);
                 musicReset();
