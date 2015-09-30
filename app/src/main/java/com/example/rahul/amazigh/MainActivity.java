@@ -13,6 +13,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private int chosenBtn = 0;
+    // test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
