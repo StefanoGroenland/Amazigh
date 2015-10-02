@@ -173,6 +173,7 @@ public class VerhaalActivity extends AppCompatActivity {
                     storyIntent.putExtra("start",false);
                     storyIntent.putExtra("exists",true);
                     startActivity(storyIntent);
+                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
                 } else{
                     Intent storyIntentMain = new Intent(this,
                             MainActivity.class);
@@ -189,6 +190,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 storyIntentBack.putExtra("start",false);
                 storyIntentBack.putExtra("exists",true);
                 startActivity(storyIntentBack);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
             else{
                 Intent storyIntentMain = new Intent(this,
