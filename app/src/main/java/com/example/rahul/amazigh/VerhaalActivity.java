@@ -72,45 +72,39 @@ public class VerhaalActivity extends AppCompatActivity {
                         musicReset();
                         Back.setImageResource(R.drawable.ic_action_menu);
                         image.setImageResource(R.drawable.assin01);
-                        System.out.println("Story1 Selected!");
                         mySound = MediaPlayer.create(this, R.raw.massin01);
                         break;
                     case 2:
+
                         musicReset();
                         image.setImageResource(R.drawable.assin02);
                         mySound = MediaPlayer.create(this, R.raw.massin02);
-                        System.out.println("Story2 Selected!");
                         break;
                     case 3:
                         musicReset();
                         image.setImageResource(R.drawable.assin03);
                         mySound = MediaPlayer.create(this, R.raw.massin03);
-                        System.out.println("Story3 Selected!");
                         break;
                     case 4:
                         musicReset();
                         image.setImageResource(R.drawable.assin04);
                         mySound = MediaPlayer.create(this, R.raw.massin04);
-                        System.out.println("Story4 Selected!");
                         break;
                     case 5:
                         musicReset();
                         image.setImageResource(R.drawable.assin05);
                         mySound = MediaPlayer.create(this, R.raw.massin05);
-                        System.out.println("Story5 Selected!");
                         break;
                     case 6:
                         musicReset();
                         image.setImageResource(R.drawable.assin06);
                         mySound = MediaPlayer.create(this, R.raw.massin06);
-                        System.out.println("Story6 Selected!");
                         break;
                     case 7:
                         musicReset();
 
                         image.setImageResource(R.drawable.assin07);
                         mySound = MediaPlayer.create(this, R.raw.massin07);
-                        System.out.println("Story7 Selected!");
                         break;
                     default:
                         System.out.println("No story selected");
