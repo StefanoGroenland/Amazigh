@@ -193,6 +193,5 @@ public class VerhaalActivity extends AppCompatActivity {
                 startActivity(storyIntentMain);
             }
         }
-
 }
 
