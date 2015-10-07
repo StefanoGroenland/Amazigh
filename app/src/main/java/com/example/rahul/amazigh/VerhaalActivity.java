@@ -75,6 +75,7 @@ public class VerhaalActivity extends AppCompatActivity {
                         mySound = MediaPlayer.create(this, R.raw.massin01);
                         break;
                     case 2:
+
                         musicReset();
                         image.setImageResource(R.drawable.assin02);
                         mySound = MediaPlayer.create(this, R.raw.massin02);
