@@ -136,6 +136,7 @@ public class VerhaalActivity extends AppCompatActivity {
         switch (massinTracker){
             case 1:
                 musicReset();
+                musicS();
                 Back.setImageResource(R.drawable.ic_action_menu);
                 image.setImageResource(R.drawable.assin01);
                 mySound = MediaPlayer.create(this, R.raw.massin01);
