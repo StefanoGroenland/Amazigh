@@ -542,6 +542,7 @@ public class VerhaalActivity extends AppCompatActivity {
         }
     }
         public void changeStory(){
+            changeLine();
             if(Next.isPressed()) {
                 if(this.tracker < pageTracker) {
                     mySound.stop();
