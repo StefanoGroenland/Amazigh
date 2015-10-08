@@ -66,16 +66,18 @@ public class VerhaalActivity extends AppCompatActivity {
             Back.setOnClickListener(BackButtonListener);
             System.out.println(musicState());
             if( !musicState() ){
-
                 switch (story) {
+
                     case 1:
                         musicReset();
                         Back.setImageResource(R.drawable.ic_action_menu);
                         image.setImageResource(R.drawable.assin01);
+                        image.setImageResource(R.drawable.assin01);
+
                         mySound = MediaPlayer.create(this, R.raw.massin01);
+
                         break;
                     case 2:
-
                         musicReset();
                         image.setImageResource(R.drawable.assin02);
                         mySound = MediaPlayer.create(this, R.raw.massin02);
@@ -102,7 +104,6 @@ public class VerhaalActivity extends AppCompatActivity {
                         break;
                     case 7:
                         musicReset();
-
                         image.setImageResource(R.drawable.assin07);
                         mySound = MediaPlayer.create(this, R.raw.massin07);
                         break;
@@ -166,12 +167,14 @@ public class VerhaalActivity extends AppCompatActivity {
                     storyIntent.putExtra("storyChosen", this.story + 1);
                     storyIntent.putExtra("start",false);
                     storyIntent.putExtra("exists",true);
+                    this.finish();
                     startActivity(storyIntent);
                     overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
                 } else{
                     Intent storyIntentMain = new Intent(this,
                             MainActivity.class);
                     musicReset();
+                    this.finish();
                     startActivity(storyIntentMain);
                 }
             }
@@ -183,6 +186,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 storyIntentBack.putExtra("storyChosen", this.story - 1);
                 storyIntentBack.putExtra("start",false);
                 storyIntentBack.putExtra("exists",true);
+                this.finish();
                 startActivity(storyIntentBack);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
@@ -190,7 +194,9 @@ public class VerhaalActivity extends AppCompatActivity {
                 Intent storyIntentMain = new Intent(this,
                         MainActivity.class);
                 musicReset();
+                this.finish();
                 startActivity(storyIntentMain);
+
             }
         }
 }
