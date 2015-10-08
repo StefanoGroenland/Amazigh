@@ -111,6 +111,11 @@ public class VerhaalActivity extends AppCompatActivity {
                         break;
                 }
             }
+            if(!musicState())
+            {
+                mySound.start();
+                this.musicState = true;
+            }
 
 
 
