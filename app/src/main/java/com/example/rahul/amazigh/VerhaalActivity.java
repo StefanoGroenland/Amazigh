@@ -113,11 +113,7 @@ public class VerhaalActivity extends AppCompatActivity {
             }
 
 
-            if(!musicState())
-            {
-                mySound.start();
-                this.musicState = true;
-            }
+
 
         }
     //            functions for the stories can be found below
@@ -163,6 +159,11 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
     }
     public void storyAicha(){
         switch (aichaTracker){
@@ -190,6 +191,11 @@ public class VerhaalActivity extends AppCompatActivity {
             default:
                 System.out.println("No story selected");
                 break;
+        }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
         }
     }
     public void storyAyarda(){
@@ -239,6 +245,11 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
     }
     public void storyIjuy(){
         switch (ijuyTracker){
@@ -261,6 +272,11 @@ public class VerhaalActivity extends AppCompatActivity {
             default:
                 System.out.println("No story selected");
                 break;
+        }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
         }
     }
     public void storyJakub(){
@@ -305,6 +321,11 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
     }
     public void storyTcacit(){
         switch (tcacitTracker){
@@ -342,6 +363,11 @@ public class VerhaalActivity extends AppCompatActivity {
             default:
                 System.out.println("No story selected");
                 break;
+        }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
         }
     }
     public void storyJack(){
@@ -401,6 +427,11 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
     }
     public void storyIjnwass(){
         switch (ijnwassTracker){
@@ -429,6 +460,11 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
     }
     public void storyAyyul(){
         switch (ayyulTracker){
@@ -446,6 +482,11 @@ public class VerhaalActivity extends AppCompatActivity {
             default:
                 System.out.println("No story selected");
                 break;
+        }
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
         }
     }
 
