@@ -56,6 +56,21 @@ public class VerhaalActivity extends AppCompatActivity {
             changeStory();
         }
     };
+    public void musicS(){
+        if(!musicState())
+        {
+            mySound.start();
+            this.musicState = true;
+        }
+    }
+    public boolean musicState() {
+        return this.musicState;
+    }
+    public void musicReset(){
+        if(musicState()){
+            mySound.release();
+        }
+    }
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -111,16 +126,10 @@ public class VerhaalActivity extends AppCompatActivity {
                         break;
                 }
             }
-            if(!musicState())
-            {
-                mySound.start();
-                this.musicState = true;
-            }
-
-
-
+            musicS();
 
         }
+
     //            functions for the stories can be found below
     public void storyMassin(){
         switch (massinTracker){
@@ -164,11 +173,6 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
     }
     public void storyAicha(){
         switch (aichaTracker){
@@ -197,11 +201,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyAyarda(){
         switch (ayardaTracker){
@@ -250,11 +250,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyIjuy(){
         switch (ijuyTracker){
@@ -278,11 +274,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyJakub(){
         switch (jakubTracker){
@@ -326,11 +318,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyTcacit(){
         switch (tcacitTracker){
@@ -369,11 +357,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyJack(){
         switch (jackTracker){
@@ -432,11 +416,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyIjnwass(){
         switch (ijnwassTracker){
@@ -465,11 +445,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
     public void storyAyyul(){
         switch (ayyulTracker){
@@ -488,23 +464,12 @@ public class VerhaalActivity extends AppCompatActivity {
                 System.out.println("No story selected");
                 break;
         }
-        if(!musicState())
-        {
-            mySound.start();
-            this.musicState = true;
-        }
+
     }
 
 
 
-    public boolean musicState() {
-            return this.musicState;
-        }
-        public void musicReset(){
-            if(musicState()){
-                mySound.release();
-            }
-    }
+
 
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
