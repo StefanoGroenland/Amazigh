@@ -17,7 +17,7 @@ import android.widget.Toast;
  */
 public class VerhaalActivity extends AppCompatActivity {
 
-        static MediaPlayer mySound = null;
+        static MediaPlayer mySound;
         int pageTracker;
         int tracker;
         int story;
@@ -57,7 +57,7 @@ public class VerhaalActivity extends AppCompatActivity {
         }
     };
     public void musicS(){
-        if(!musicState())
+        if(!musicState() )
         {
             mySound.start();
             this.musicState = true;
