@@ -73,9 +73,7 @@ public class VerhaalActivity extends AppCompatActivity {
                         Back.setImageResource(R.drawable.ic_action_menu);
                         image.setImageResource(R.drawable.assin01);
                         image.setImageResource(R.drawable.assin01);
-
                         mySound = MediaPlayer.create(this, R.raw.massin01);
-
                         break;
                     case 2:
                         musicReset();
