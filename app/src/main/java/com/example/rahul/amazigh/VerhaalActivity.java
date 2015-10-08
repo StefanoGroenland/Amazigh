@@ -79,7 +79,8 @@ public class VerhaalActivity extends AppCompatActivity {
             //Get the chosen story.
             story = passed.getInt("storyChosen");
             if(passed.getBoolean("exists")) {
-                this.musicState = passed.getBoolean("start");
+//                this.musicState = passed.getBoolean("start");
+                this.musicState = false;
             }
             setContentView(R.layout.activity_verhaal);
             //Get the imageView
