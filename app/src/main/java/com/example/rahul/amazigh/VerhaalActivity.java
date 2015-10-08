@@ -17,7 +17,7 @@ import android.widget.Toast;
  */
 public class VerhaalActivity extends AppCompatActivity {
 
-        static MediaPlayer mySound;
+        static MediaPlayer mySound = null;
         int pageTracker;
         int tracker;
         int story;
