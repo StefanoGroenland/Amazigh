@@ -18,8 +18,19 @@ import android.widget.Toast;
 public class VerhaalActivity extends AppCompatActivity {
 
         static MediaPlayer mySound = null;
-
+        int pageTracker;
+        int tracker;
         int story;
+        int massinTracker,
+                aichaTracker,
+                ayardaTracker,
+                ijuyTracker,
+                jakubTracker,
+                tcacitTracker,
+                jackTracker,
+                ijnwassTracker,
+                ayyulTracker;
+
         ImageButton Next;
         ImageButton Back;
         boolean musicState = false;
@@ -69,47 +80,38 @@ public class VerhaalActivity extends AppCompatActivity {
                 switch (story) {
 
                     case 1:
-                        musicReset();
-                        Back.setImageResource(R.drawable.ic_action_menu);
-                        image.setImageResource(R.drawable.assin01);
-                        image.setImageResource(R.drawable.assin01);
-                        mySound = MediaPlayer.create(this, R.raw.massin01);
+                        storyMassin();
                         break;
                     case 2:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin02);
-                        mySound = MediaPlayer.create(this, R.raw.massin02);
+                        storyAicha();
                         break;
                     case 3:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin03);
-                        mySound = MediaPlayer.create(this, R.raw.massin03);
+                        storyAyarda();
                         break;
                     case 4:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin04);
-                        mySound = MediaPlayer.create(this, R.raw.massin04);
+                        storyIjuy();
                         break;
                     case 5:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin05);
-                        mySound = MediaPlayer.create(this, R.raw.massin05);
+                        storyJakub();
                         break;
                     case 6:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin06);
-                        mySound = MediaPlayer.create(this, R.raw.massin06);
+                        storyTcacit();
                         break;
                     case 7:
-                        musicReset();
-                        image.setImageResource(R.drawable.assin07);
-                        mySound = MediaPlayer.create(this, R.raw.massin07);
+                        storyJack();
+                        break;
+                    case 8:
+                        storyIjnwass();
+                        break;
+                    case 9:
+                        storyAyyul();
                         break;
                     default:
                         System.out.println("No story selected");
                         break;
                 }
             }
+
 
             if(!musicState())
             {
@@ -118,7 +120,338 @@ public class VerhaalActivity extends AppCompatActivity {
             }
 
         }
-        public boolean musicState() {
+    //            functions for the stories can be found below
+    public void storyMassin(){
+        switch (massinTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.assin01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.assin02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.assin03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.assin04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            case 5:
+                musicReset();
+                image.setImageResource(R.drawable.assin05);
+                mySound = MediaPlayer.create(this, R.raw.massin05);
+                break;
+            case 6:
+                musicReset();
+                image.setImageResource(R.drawable.assin06);
+                mySound = MediaPlayer.create(this, R.raw.massin06);
+                break;
+            case 7:
+                musicReset();
+                image.setImageResource(R.drawable.assin07);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyAicha(){
+        switch (aichaTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.aicha_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.aicha_02);
+                mySound = MediaPlayer.create(this, R.raw.aicha_02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.aicha_03);
+                mySound = MediaPlayer.create(this, R.raw.aicha_03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.aicha_04);
+                mySound = MediaPlayer.create(this, R.raw.aicha_04);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyAyarda(){
+        switch (ayardaTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.ayarda_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            case 5:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_05);
+                mySound = MediaPlayer.create(this, R.raw.massin05);
+                break;
+            case 6:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_05);
+                mySound = MediaPlayer.create(this, R.raw.massin06);
+                break;
+            case 7:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_06);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            case 8:
+                musicReset();
+                image.setImageResource(R.drawable.ayarda_07);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyIjuy(){
+        switch (ijuyTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.uyennej_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.uyennej_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.uyennej_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyJakub(){
+        switch (jakubTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.jakub_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            case 5:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_05);
+                mySound = MediaPlayer.create(this, R.raw.massin05);
+                break;
+            case 6:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_06);
+                mySound = MediaPlayer.create(this, R.raw.massin06);
+                break;
+            case 7:
+                musicReset();
+                image.setImageResource(R.drawable.jakub_07);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyTcacit(){
+        switch (tcacitTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.tcacit_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.tcacit_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.tcacit_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.tcacit_04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            case 5:
+                musicReset();
+                image.setImageResource(R.drawable.tcacit_05);
+                mySound = MediaPlayer.create(this, R.raw.massin05);
+                break;
+            case 6:
+                musicReset();
+                image.setImageResource(R.drawable.tcacit_06);
+                mySound = MediaPlayer.create(this, R.raw.massin06);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyJack(){
+        switch (jackTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.jack_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.jack_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.jack_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.jack_04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            case 5:
+                musicReset();
+                image.setImageResource(R.drawable.jack_05);
+                mySound = MediaPlayer.create(this, R.raw.massin05);
+                break;
+            case 6:
+                musicReset();
+                image.setImageResource(R.drawable.jack_06);
+                mySound = MediaPlayer.create(this, R.raw.massin06);
+                break;
+            case 7:
+                musicReset();
+                image.setImageResource(R.drawable.jack_07);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            case 8:
+                musicReset();
+                image.setImageResource(R.drawable.jack_08);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            case 9:
+                musicReset();
+                image.setImageResource(R.drawable.jack_09);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            case 10:
+                musicReset();
+                image.setImageResource(R.drawable.jack_10);
+                mySound = MediaPlayer.create(this, R.raw.massin07);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyIjnwass(){
+        switch (ijnwassTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.wass_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.wass_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            case 3:
+                musicReset();
+                image.setImageResource(R.drawable.wass_03);
+                mySound = MediaPlayer.create(this, R.raw.massin03);
+                break;
+            case 4:
+                musicReset();
+                image.setImageResource(R.drawable.wass_04);
+                mySound = MediaPlayer.create(this, R.raw.massin04);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+    public void storyAyyul(){
+        switch (ayyulTracker){
+            case 1:
+                musicReset();
+                Back.setImageResource(R.drawable.ic_action_menu);
+                image.setImageResource(R.drawable.wuccen_01);
+                mySound = MediaPlayer.create(this, R.raw.massin01);
+                break;
+            case 2:
+                musicReset();
+                image.setImageResource(R.drawable.wuccen_02);
+                mySound = MediaPlayer.create(this, R.raw.massin02);
+                break;
+            default:
+                System.out.println("No story selected");
+                break;
+        }
+    }
+
+
+
+    public boolean musicState() {
             return this.musicState;
         }
         public void musicReset(){
@@ -154,15 +487,70 @@ public class VerhaalActivity extends AppCompatActivity {
             mySound.stop();
             finish();
         }
+
+    public int getChosen(){
+        return story;
+    }
+    public void changeLine(){
+        switch (getChosen()){
+            case 1:
+                story = 1;
+                tracker = massinTracker;
+                pageTracker = 7;
+            break;
+            case 2:
+                story = 2;
+                tracker = aichaTracker;
+                pageTracker = 4;
+                break;
+            case 3:
+                story = 3;
+                tracker = ayardaTracker;
+                pageTracker = 7;
+                break;
+            case 4:
+                story = 4;
+                tracker = ijuyTracker;
+                pageTracker = 3;
+                break;
+            case 5:
+                story = 5;
+                tracker = jakubTracker;
+                pageTracker = 7;
+                break;
+            case 6:
+                story = 6;
+                tracker = tcacitTracker;
+                pageTracker = 6;
+                break;
+            case 7:
+                story = 7;
+                tracker = jackTracker;
+                pageTracker = 10;
+                break;
+            case 8:
+                story = 8;
+                tracker = ijnwassTracker;
+                pageTracker = 4;
+                break;
+            case 9:
+                story = 9;
+                tracker = ayyulTracker;
+                pageTracker = 2;
+                break;
+
+        }
+    }
         public void changeStory(){
             if(Next.isPressed()) {
-                if(this.story < 7) {
+                if(this.tracker < pageTracker) {
                     mySound.stop();
                     Intent storyIntent = new Intent(this,
                             VerhaalActivity.class);
 
                     storyIntent.putExtra("callingActivity", "VerhaalActivity");
-                    storyIntent.putExtra("storyChosen", this.story + 1);
+                    storyIntent.putExtra("storyChosen", this.story);
+                    tracker = tracker + 1;
                     storyIntent.putExtra("start",false);
                     storyIntent.putExtra("exists",true);
                     this.finish();
@@ -176,12 +564,13 @@ public class VerhaalActivity extends AppCompatActivity {
                     startActivity(storyIntentMain);
                 }
             }
-            else if(this.story > 1){
+            else if(this.tracker > 1){
                 Intent storyIntentBack = new Intent(this,
                         VerhaalActivity.class);
                 musicReset();
                 storyIntentBack.putExtra("callingActivity", "VerhaalActivity");
-                storyIntentBack.putExtra("storyChosen", this.story - 1);
+                storyIntentBack.putExtra("storyChosen", this.story);
+                tracker = tracker - 1;
                 storyIntentBack.putExtra("start",false);
                 storyIntentBack.putExtra("exists",true);
                 this.finish();
