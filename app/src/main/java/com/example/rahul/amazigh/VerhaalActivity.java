@@ -577,7 +577,7 @@ public class VerhaalActivity extends AppCompatActivity {
                     startActivity(storyIntentMain);
                 }
             }
-            else if(this.tracker > 1){
+            else if(this.tracker > pageTracker){
                 Intent storyIntentBack = new Intent(this,
                         VerhaalActivity.class);
                 musicReset();
