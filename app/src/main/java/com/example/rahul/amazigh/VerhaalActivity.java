@@ -21,15 +21,15 @@ public class VerhaalActivity extends AppCompatActivity {
         int pageTracker;
         int tracker;
         int story;
-        int massinTracker,
-                aichaTracker,
-                ayardaTracker,
-                ijuyTracker,
-                jakubTracker,
-                tcacitTracker,
-                jackTracker,
-                ijnwassTracker,
-                ayyulTracker;
+        int massinTracker = 1;
+        int aichaTracker = 1;
+        int ayardaTracker = 1;
+        int ijuyTracker = 1;
+        int jakubTracker = 1;
+        int tcacitTracker = 1;
+        int jackTracker = 1;
+        int ijnwassTracker = 1;
+        int ayyulTracker = 1;
 
         ImageButton Next;
         ImageButton Back;
@@ -94,6 +94,11 @@ public class VerhaalActivity extends AppCompatActivity {
             }
         }
 //            musicS();
+
+//        if(story == 1){
+//            storyMassin();
+//            System.out.println("storyblblblbl");
+//        }
 
     }
 
