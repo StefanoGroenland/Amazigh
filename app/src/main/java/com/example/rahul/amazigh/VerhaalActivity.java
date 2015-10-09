@@ -519,47 +519,38 @@ public class VerhaalActivity extends AppCompatActivity {
     public void changeLine(){
         switch (getChosen()){
             case 1:
-                story = 1;
                 tracker = massinTracker;
                 pageTracker = 7;
             break;
             case 2:
-                story = 2;
                 tracker = aichaTracker;
                 pageTracker = 4;
                 break;
             case 3:
-                story = 3;
                 tracker = ayardaTracker;
                 pageTracker = 7;
                 break;
             case 4:
-                story = 4;
                 tracker = ijuyTracker;
                 pageTracker = 3;
                 break;
             case 5:
-                story = 5;
                 tracker = jakubTracker;
                 pageTracker = 7;
                 break;
             case 6:
-                story = 6;
                 tracker = tcacitTracker;
                 pageTracker = 6;
                 break;
             case 7:
-                story = 7;
                 tracker = jackTracker;
                 pageTracker = 10;
                 break;
             case 8:
-                story = 8;
                 tracker = ijnwassTracker;
                 pageTracker = 4;
                 break;
             case 9:
-                story = 9;
                 tracker = ayyulTracker;
                 pageTracker = 2;
                 break;
