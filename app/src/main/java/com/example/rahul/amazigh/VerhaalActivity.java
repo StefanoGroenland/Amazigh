@@ -561,7 +561,9 @@ public class VerhaalActivity extends AppCompatActivity {
             changeLine();
             if(Next.isPressed()) {
                 if(this.tracker < pageTracker) {
-                    mySound.stop();
+                    if(musicState()) {
+                        mySound.stop();
+                    }
                     Intent storyIntent = new Intent(this,
                             VerhaalActivity.class);
 
