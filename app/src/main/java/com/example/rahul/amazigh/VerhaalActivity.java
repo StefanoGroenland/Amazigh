@@ -37,6 +37,67 @@ public class VerhaalActivity extends AppCompatActivity {
 
         ImageView image;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Get extras send from intents
+        Bundle passed = getIntent().getExtras();
+        //Get the chosen story.
+        story = passed.getInt("storyChosen");
+        if(passed.getBoolean("exists")) {
+//                this.musicState = passed.getBoolean("start");
+            this.musicState = false;
+        }
+        setContentView(R.layout.activity_verhaal);
+        //Get the imageView
+        image = (ImageView)  findViewById(R.id.imageView);
+        //Get the Buttons
+        Next = (ImageButton) findViewById(R.id.Next);
+        Back = (ImageButton) findViewById(R.id.Back);
+        //Set Onclick listeners
+        Next.setOnClickListener(NextButtonListener);
+        Back.setOnClickListener(BackButtonListener);
+        System.out.println(musicState());
+        if( !musicState() ){
+            switch (story) {
+
+                case 1:
+                    storyMassin();
+                    break;
+                case 2:
+                    storyAicha();
+                    break;
+                case 3:
+                    storyAyarda();
+                    break;
+                case 4:
+                    storyIjuy();
+                    break;
+                case 5:
+                    storyJakub();
+                    break;
+                case 6:
+                    storyTcacit();
+                    break;
+                case 7:
+                    storyJack();
+                    break;
+                case 8:
+                    storyIjnwass();
+                    break;
+                case 9:
+                    storyAyyul();
+                    break;
+                default:
+                    System.out.println("No story selected");
+                    break;
+            }
+        }
+//            musicS();
+
+    }
+
+
     private View.OnClickListener NextButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -71,65 +132,6 @@ public class VerhaalActivity extends AppCompatActivity {
             mySound.release();
         }
     }
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            //Get extras send from intents
-            Bundle passed = getIntent().getExtras();
-            //Get the chosen story.
-            story = passed.getInt("storyChosen");
-            if(passed.getBoolean("exists")) {
-//                this.musicState = passed.getBoolean("start");
-                this.musicState = false;
-            }
-            setContentView(R.layout.activity_verhaal);
-            //Get the imageView
-            image = (ImageView)  findViewById(R.id.imageView);
-            //Get the Buttons
-            Next = (ImageButton) findViewById(R.id.Next);
-            Back = (ImageButton) findViewById(R.id.Back);
-            //Set Onclick listeners
-            Next.setOnClickListener(NextButtonListener);
-            Back.setOnClickListener(BackButtonListener);
-            System.out.println(musicState());
-            if( !musicState() ){
-                switch (story) {
-
-                    case 1:
-                        storyMassin();
-                        break;
-                    case 2:
-                        storyAicha();
-                        break;
-                    case 3:
-                        storyAyarda();
-                        break;
-                    case 4:
-                        storyIjuy();
-                        break;
-                    case 5:
-                        storyJakub();
-                        break;
-                    case 6:
-                        storyTcacit();
-                        break;
-                    case 7:
-                        storyJack();
-                        break;
-                    case 8:
-                        storyIjnwass();
-                        break;
-                    case 9:
-                        storyAyyul();
-                        break;
-                    default:
-                        System.out.println("No story selected");
-                        break;
-                }
-            }
-            musicS();
-
-        }
 
     //            functions for the stories can be found below
     public void storyMassin(){
@@ -139,6 +141,7 @@ public class VerhaalActivity extends AppCompatActivity {
                 Back.setImageResource(R.drawable.ic_action_menu);
                 image.setImageResource(R.drawable.assin01);
                 mySound = MediaPlayer.create(this, R.raw.massin01);
+                musicS();
                 break;
             case 2:
                 musicReset();
