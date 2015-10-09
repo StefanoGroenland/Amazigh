@@ -147,31 +147,37 @@ public class VerhaalActivity extends AppCompatActivity {
                 musicReset();
                 image.setImageResource(R.drawable.assin02);
                 mySound = MediaPlayer.create(this, R.raw.massin02);
+                musicS();
                 break;
             case 3:
                 musicReset();
                 image.setImageResource(R.drawable.assin03);
                 mySound = MediaPlayer.create(this, R.raw.massin03);
+                musicS();
                 break;
             case 4:
                 musicReset();
                 image.setImageResource(R.drawable.assin04);
                 mySound = MediaPlayer.create(this, R.raw.massin04);
+                musicS();
                 break;
             case 5:
                 musicReset();
                 image.setImageResource(R.drawable.assin05);
                 mySound = MediaPlayer.create(this, R.raw.massin05);
+                musicS();
                 break;
             case 6:
                 musicReset();
                 image.setImageResource(R.drawable.assin06);
                 mySound = MediaPlayer.create(this, R.raw.massin06);
+                musicS();
                 break;
             case 7:
                 musicReset();
                 image.setImageResource(R.drawable.assin07);
                 mySound = MediaPlayer.create(this, R.raw.massin07);
+                musicS();
                 break;
             default:
                 System.out.println("No story selected");
@@ -185,21 +191,25 @@ public class VerhaalActivity extends AppCompatActivity {
                 Back.setImageResource(R.drawable.ic_action_menu);
                 image.setImageResource(R.drawable.aicha_01);
                 mySound = MediaPlayer.create(this, R.raw.massin01);
+                musicS();
                 break;
             case 2:
                 musicReset();
                 image.setImageResource(R.drawable.aicha_02);
                 mySound = MediaPlayer.create(this, R.raw.aicha_02);
+                musicS();
                 break;
             case 3:
                 musicReset();
                 image.setImageResource(R.drawable.aicha_03);
                 mySound = MediaPlayer.create(this, R.raw.aicha_03);
+                musicS();
                 break;
             case 4:
                 musicReset();
                 image.setImageResource(R.drawable.aicha_04);
                 mySound = MediaPlayer.create(this, R.raw.aicha_04);
+                musicS();
                 break;
             default:
                 System.out.println("No story selected");
